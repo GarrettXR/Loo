@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>Loo</string>
+			<key>host</key>
+			<string>localhost</string>
+			<key>name</key>
+			<string>localhost</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPSocketConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK8QDwcIFRYXGBkfICEoLDA1OlUkbnVs
+			bNMJCgsMEBRXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6MNDg+A
+			AoADgASjERITgAWABoAKgA5UdHlwZVRyb3dzVGtleXNfECZTZWxl
+			Y3Rpb25EZXRhaWxUeXBlUHJpbWFyeUtleWVkRGV0YWlsc9MJCgsa
+			HB6hG4AHoR2ACIAJUjEzCdIiIyQlWiRjbGFzc25hbWVYJGNsYXNz
+			ZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5oyQmJ1xOU0RpY3Rpb25h
+			cnlYTlNPYmplY3TSCgspK6EqgAuADdILLS4vWU5TLnN0cmluZ4AM
+			Umlk0iIjMTJfEA9OU011dGFibGVTdHJpbmejMTM0WE5TU3RyaW5n
+			WE5TT2JqZWN00iIjNjdeTlNNdXRhYmxlQXJyYXmjNjg5V05TQXJy
+			YXlYTlNPYmplY3TSIiMmO6ImPFhOU09iamVjdF8QD05TS2V5ZWRB
+			cmNoaXZlctE/QFRkYXRhgAEACAARABoAIwAtADIANwBJAE8AVgBe
+			AGkAcAB0AHYAeAB6AH4AgACCAIQAhgCLAJAAlQC+AMUAxwDJAMsA
+			zQDPANIA0wDYAOMA7AECAQYBEwEcASEBIwElAScBLAE2ATgBOwFA
+			AVIBVgFfAWgBbQF8AYABiAGRAZYBmQGiAbQBtwG8AAAAAAAAAgEA
+			AAAAAAAAQQAAAAAAAAAAAAAAAAAAAb4=
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {1048, 439}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>SELECT a.*, GROUP_CONCAT(feat.feature SEPARATOR ', ') as features
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id
+LEFT JOIN features feat ON b.feature_id = feat.id
+GROUP BY a.id;
+
+SELECT a.*, b.*
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id;
+
+SELECT a.* FROM listings a;</string>
+			<key>table</key>
+			<string>listings_features_link</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>214</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>SELECT a.*, GROUP_CONCAT(feat.feature SEPARATOR ', ') as features
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id
+LEFT JOIN features feat ON b.feature_id = feat.id
+GROUP BY a.id</string>
+		<string>SELECT a.*, GROUP_CONCAT(feat.feature SEPARATOR ', ') as description
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id
+LEFT JOIN features feat ON b.feature_id = feat.id
+GROUP BY a.id</string>
+		<string>SELECT a.*, GROUP_CONCAT(feat.feature SEPARATOR ', ')
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id
+LEFT JOIN features feat ON b.feature_id = feat.id
+GROUP BY a.id</string>
+		<string>SELECT a.* FROM listings a</string>
+		<string>SELECT a.* FROM listing a</string>
+		<string>SELECT a.*, b.*
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id</string>
+		<string>SELECT a.*
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id</string>
+		<string>SELECT a.*, GROUP_CONCAT(feat.feature SEPERATOR ', ')
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id
+LEFT JOIN features feat ON b.feature_id = feat.id
+GROUP BY a.id</string>
+		<string>SELECT a.*, GROUP_CONCAT(feat.feature, separator=', ')
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id
+LEFT JOIN features feat ON b.feature_id = feat.id
+GROUP BY a.id</string>
+		<string>SELECT a.*, GROUP_CONCAT(feat.feature)
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id
+LEFT JOIN features feat ON b.feature_id = feat.id
+GROUP BY a.id</string>
+		<string>SELECT a.*, GROUP_CONCAT(feat.feature)
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id
+LEFT JOIN features feat ON b.feature_id = feat.id</string>
+		<string>SELECT a.*, feat.feature
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id
+LEFT JOIN features feat ON b.feature_id = feat.id</string>
+		<string>SELECT a.*, feat.*
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id
+LEFT JOIN features feat ON b.feature_id = feat.id</string>
+		<string>SELECT a.*, b.*, feat.*
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id
+LEFT JOIN features feat ON b.feature_id = feat.id</string>
+		<string>SELECT a.*
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id
+LEFT JOIN features feat ON b.feature_id = feat.id</string>
+		<string>SELECT listings.*
+FROM listings a
+LEFT JOIN listings_features_link b ON a.id = b.listing_id
+LEFT JOIN features feat ON b.feature_id = feat.id</string>
+		<string>truncate listings_features_link</string>
+		<string>truncate table listings</string>
+		<string>select id from categories where slug = 'community'</string>
+		<string>INSERT INTO listings (img, category_id, listing_name, description) VALUES (dasda, 1, dajsnd,asdlnsjlfncaljkncnsalc.aljknclasnlcfafads. )</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.7.21</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
