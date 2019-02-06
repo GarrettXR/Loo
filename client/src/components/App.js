@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 import { BrowserRouter as Router, Route } from 'react-router-dom' 
 import store from '../store'
 
-import Home from './Home'
+import Listing from './Listing'
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div>
-            <Route path="/" exact component={Home} />
+            <Route path="/listing/:id" exact component={Listing} />
           </div>
         </Router>
       </Provider>
