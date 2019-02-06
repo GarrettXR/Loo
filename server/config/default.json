@@ -1,8 +1,8 @@
 {
   "db": {
     "host": "localhost",
-    "user": "",
-    "password": "",
-    "database": ""
+    "user": "Loome",
+    "password": "loo",
+    "database": "Loo"
   }
 }

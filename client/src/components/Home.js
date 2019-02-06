@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { makeACall, connectToSocketServer } from '../actions/example'
+import { makeACall } from '../actions/example'
 
 class Home extends Component {
   componentDidMount() {
