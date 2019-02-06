@@ -1,6 +1,7 @@
 import express from 'express';
 const Router = express.Router();
 import conn from '../utils/db'
+import axios from 'axios'
 
 Router.get('/listings', (req, res, next) => {
     const sql = `SELECT a.*, GROUP_CONCAT(feat.feature SEPARATOR ', ') as features
@@ -31,5 +32,4 @@ Router.get('/listings/:id', (req, res, next) => {
         res.json(results)
       })
 })
-
 export default Router
